@@ -35,7 +35,4 @@ public class EditModalModel : StudentListPageModel
         return NoContent();
     }
 
-    /*public void OnGet()
-    {
-    }*/
 }

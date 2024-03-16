@@ -11,4 +11,5 @@ public class StudentDto : AuditedEntityDto<Guid>
     public StudentSex Type { get; set; }
     public string Phone { get; set; }
     public string Address { get; set; }
+    public DateTime DateOfBirth { get; set; }
 }

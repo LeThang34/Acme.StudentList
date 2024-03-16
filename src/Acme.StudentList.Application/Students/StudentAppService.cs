@@ -12,12 +12,13 @@ namespace Acme.StudentList.Students;
 
 public class StudentAppService :
     CrudAppService<
-        Student, //The Book entity
-        StudentDto, //Used to show books
-        Guid, //Primary key of the book entity  
+        Student, 
+        StudentDto, 
+        Guid,  
         PagedAndSortedResultRequestDto, //Used for paging/sorting
-        CreateUpdateStudentDto>, //Used to create/update a book
-    IStudentAppService //implement the IBookAppService
+        //SearchFilterDto,
+        CreateUpdateStudentDto>, //Used to create/update
+    IStudentAppService //implement the IStudentAppService
 {
     public StudentAppService(IRepository<Student, Guid> repository)
         : base(repository)
@@ -28,4 +29,5 @@ public class StudentAppService :
         UpdatePolicyName = StudentListPermissions.Students.Edit;
         DeletePolicyName = StudentListPermissions.Students.Delete;
     }
+
 }

@@ -8,10 +8,11 @@ namespace Acme.StudentList.Students;
 
 public interface IStudentAppService:
 ICrudAppService< //Defines CRUD methods
-        StudentDto, //Used to show books
-        Guid, //Primary key of the book entity
+        StudentDto, //Used to show studens
+        Guid, //Primary key of the studens entity
         PagedAndSortedResultRequestDto, //Used for paging/sorting
-        CreateUpdateStudentDto> //Used to create/update a book
+        //SearchFilterDto,
+        CreateUpdateStudentDto> //Used to create/update a studens
 {
 
 }

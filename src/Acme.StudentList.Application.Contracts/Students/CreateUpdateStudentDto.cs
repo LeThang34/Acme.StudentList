@@ -24,5 +24,8 @@ public class CreateUpdateStudentDto
     [Required]
     [StringLength(128)]
     public String Address { get; set; }
+
+    [DataType(DataType.Date)]
+    public DateTime DateOfBirth { get; set; } = DateTime.Now;
 }
 

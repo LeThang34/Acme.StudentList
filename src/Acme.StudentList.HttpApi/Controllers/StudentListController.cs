@@ -11,4 +11,9 @@ public abstract class StudentListController : AbpControllerBase
     {
         LocalizationResource = typeof(StudentListResource);
     }
+
+
 }
+
+
+

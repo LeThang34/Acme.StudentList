@@ -8,6 +8,9 @@
     "**/platforms"
   ],
 
-  "BookDeletionConfirmationMessage": "Are you sure to delete the book '{0}'?",
-  "SuccessfullyDeleted": "Successfully deleted!"
+  "BookDeletionConfirmationMessage": "Bạn có chắc chắn sẽ xóa '{0}'?",
+  "SuccessfullyDeleted": "Successfully deleted!",
+  "Save": "Lưu",
+  "Cancel": "Hủy"
+
 }

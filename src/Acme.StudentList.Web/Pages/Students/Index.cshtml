@@ -14,13 +14,13 @@
 <abp-card-header>
     <abp-row>
         <abp-column size-md="_6">
-            <abp-card-title>@L["Students"]</abp-card-title>
+            <abp-card-title>@L["Danh sách sinh viên"]</abp-card-title>
         </abp-column>
         <abp-column size-md="_6" class="text-end">
             @if (await AuthorizationService.IsGrantedAsync(StudentListPermissions.Students.Create))
             {
                 <abp-button id="NewStudentButton"
-                            text="@L["NewStudent"].Value"
+                            text="@L["Thêm sinh viên"].Value"
                             icon="plus"
                             button-type="Primary" />
             }
@@ -28,9 +28,10 @@
     </abp-row>
 </abp-card-header>
 
+
 <abp-card>
     <abp-card-header>
-        <h2>@L["Students"]</h2>
+        <h2>@L["Quản lý sinh viên"]</h2>
     </abp-card-header>
     <abp-card-body>
         <abp-table striped-rows="true" id="StudentsTable"></abp-table>

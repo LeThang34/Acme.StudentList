@@ -1,0 +1,21 @@
+﻿@page
+@using Acme.StudentList.Localization
+@using Acme.StudentList.Web.Pages.Students
+@using Microsoft.Extensions.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@model DetailStudentModalModel
+@inject IStringLocalizer<StudentListResource> L
+@{
+    Layout = null;
+}
+
+<abp-dynamic-form abp-model="Student" asp-page="/Students/DetailStudentModal">
+    <abp-modal>
+        <abp-modal-header title="@L["Chi tiết"].Value"></abp-modal-header>
+        <abp-modal-body>
+            <abp-form-content />
+        </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel)"></abp-modal-footer>
+    </abp-modal>
+   
+</abp-dynamic-form>

@@ -20,9 +20,11 @@ public class StudentListDataSeederContributor
     }
 
     public async Task SeedAsync(DataSeedContext context)
+
     {
         if (await _studentRepository.GetCountAsync() <= 0)
         {
+
             await _studentRepository.InsertAsync(
                 new Student
                 {
@@ -30,7 +32,8 @@ public class StudentListDataSeederContributor
                     Class = "62HT",
                     Type = StudentSex.Male,
                     Phone = "0123456789",
-                    Address = "Hà Nội"
+                    Address = "Hà Nội",
+                    DateOfBirth = new DateTime(2002, 9, 27),
                 },
                 autoSave: true
             );
@@ -42,7 +45,8 @@ public class StudentListDataSeederContributor
                     Class = "64HT",
                     Type = StudentSex.Male,
                     Phone = "0123456888",
-                    Address = "Hồ Chí Minh"
+                    Address = "Hồ Chí Minh",
+                    DateOfBirth = new DateTime(2002, 9, 27),
                 },
                 autoSave: true
             );

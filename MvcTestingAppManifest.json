@@ -1,0 +1,13 @@
+{
+  "Acme.StudentList.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.Application.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.Domain.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.Domain.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.EntityFrameworkCore.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.HttpApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.TestBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "Acme.StudentList.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~"
+}
